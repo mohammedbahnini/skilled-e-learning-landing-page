@@ -173,13 +173,13 @@ header {
       padding-top: 2.375rem;
       padding-bottom: 2.875rem; } }
   .hero::after {
-    content: url("../../assets/image-hero-desktop.png");
+    content: url("../assets/image-hero-desktop.png");
     position: absolute;
     left: 50.8%;
     bottom: 2.25rem; }
     @media screen and (max-width: 62rem) {
       .hero::after {
-        content: url("../../assets/image-hero-tablet.webp");
+        content: url("../assets/image-hero-tablet.webp");
         opacity: .3;
         left: 48.3%;
         bottom: 8.4375rem; } }
