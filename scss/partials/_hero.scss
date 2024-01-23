@@ -1,0 +1,70 @@
+.hero{
+    padding-top: 10.93rem;
+    padding-bottom: 14.125rem;
+    position: relative;
+    @include down(sm){
+        padding-top: 2.375rem;
+        padding-bottom: 2.875rem;
+    }
+    &::after{
+        content: url('../../assets/image-hero-desktop.png');
+        position: absolute;
+        left: 50.8%;
+        bottom: 2.25rem;
+        @include down(md){
+            content: url('../../assets/image-hero-tablet.webp');
+            opacity: .3;
+            left: 48.3%;
+            bottom: 8.4375rem;
+
+        }
+        @include down(sm){
+            display: none;
+        }
+    }
+
+    
+    &__text{
+        max-width: 28.56rem;
+        @include down(md){
+            max-width: 24.875rem;
+        }
+        @include down(sm){
+                margin-bottom: 2.875rem;
+        }
+        .heading{
+            margin-bottom: 1.8125rem;
+            @include down(md){
+                font-size: 2.5rem;
+                line-height: normal;
+                margin-bottom: 1.5625rem;
+            }
+        }
+        .text{
+            margin-bottom: 2.5rem;
+            @include down(md){
+                font-size: 1rem;
+                margin-bottom: 1.5625rem;
+            }
+            
+        }
+
+        .btn{
+            @include down(md){
+                padding: 1rem 2.375rem;
+                border-radius: 2rem;
+            }
+        }
+    }
+
+    &__image{
+        display: none;
+        @include down(sm){
+            display: block;
+            img{
+                transform: scale(1.11);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,91 @@
+// colors
+$lightBlue: #666CA3;
+$darkBlue: #13183F;
+$grayishBlue: #83869A; 
+$softRed: #F74780; 
+$softPink: rgba(255, 167, 195, 1);
+$white : white ;
+$black : black;
+$linearGradientRed: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+$linearGradientPurple: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+
+
+// colors map
+$colors : 
+(
+    'light-blue' : $lightBlue  , 
+    'dark-blue' : $darkBlue  , 
+    'grayish-blue' : $grayishBlue  , 
+    'soft-red' : $softRed , 
+    'soft-pink' : $softPink , 
+    'white' : $white , 
+    'black' : $black
+);
+
+// linears map
+$linears: 
+(
+    'linear-red' : $linearGradientRed,
+    'linear-purple' : $linearGradientPurple
+);
+
+
+// font family
+$fontFamily: 'Plus Jakarta Sans', sans-serif;
+
+// font size
+$baseFontSize: 16px;
+
+// font weight
+$weights : (
+    'x-light' : 200 , 
+    'light' : 300, 
+    'normal' : 400 , 
+    'medium' : 500 , 
+    'semi-bold' : 600 , 
+    'bold' : 700 , 
+    'x-bold' :800
+);
+
+// headings 
+$headingFontSize: 'fontSize';
+$headingLineHeight: 'lineHeight';
+
+$heading : 
+(
+    'xlg' : (
+        $headingFontSize : 3.5rem , 
+        $headingLineHeight : 4.375rem
+    ) , 
+    'lg' : (
+        $headingFontSize : 2.5rem , 
+        $headingLineHeight : 3.1875rem
+    ) ,
+    'md' : (
+        $headingFontSize : 2rem , 
+        $headingLineHeight : 2.5rem
+    ) , 
+    'sm' : (
+        $headingFontSize : 1.5rem , 
+        $headingLineHeight : 1.75rem
+    )
+);
+
+// paragraphs 
+$paragraphs : (
+    'md' : (
+        $headingFontSize : 1.125rem , 
+        $headingLineHeight : 1.75rem
+    ) , 
+    'sm' : (
+        $headingFontSize : 1rem , 
+        $headingLineHeight : 1.75rem
+    )
+);
+
+// breakpoints (with rem)
+$breakpoints :(
+    'lg' : 75rem ,
+    'sm' : 29.68rem , 
+    'md' : 62rem     
+);

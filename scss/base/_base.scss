@@ -1,0 +1,89 @@
+@import 'vars';
+@import '../mixins/responsive';
+
+
+// buttons
+.btn {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding: 0.7777777em 1.7222222em;
+    color: white ;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 1.55555555em;
+    background-color: rgba(rgb(26, 58, 146)  , 1);
+    transition: opacity .2s linear;
+    font-weight: 700;
+    &:hover{
+        opacity: .7;
+    }
+
+    @include down(md){
+        padding: 0.625em 1.5em;
+        font-size: 1rem;
+        line-height: 1.625rem;
+
+    }
+}
+
+//container
+.container{
+    max-width: calc(69.375rem  + 5rem);
+    padding: 0 2.4375rem;
+    margin: 0 auto ;
+    @include down(sm){
+        padding:  0 1rem;
+    }
+
+}
+
+.logo{
+    display: inline-block;
+    width: 6.94rem ;
+    @include down(md){
+        width: 5.5625rem;
+    }
+}
+
+
+
+// text colors 
+@each $key , $val in $colors{
+    .#{$key}{
+        color: $val;
+    }
+    .bg-#{$key}{
+        background-color: $val;
+    }
+}
+
+// background linears 
+@each $key , $val in $linears{
+    .bg-#{$key}{
+        background-image: $val;
+    }
+}
+
+
+// typo 
+@each $key , $val in $heading{
+    .heading--#{$key}{
+        font-size:  map-get($val, fontSize  );
+        line-height: map-get($val , lineHeight);
+    }
+}
+
+@each $key , $val in $paragraphs {
+    .text--#{$key}{
+        font-size: map-get( $val , fontSize);
+        line-height: map-get($val , lineHeight);
+    }
+}
+
+@each $key , $val in $weights{
+    .fw--#{$key}{
+        font-weight: $val;
+    }
+}
